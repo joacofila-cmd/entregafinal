@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doná ahora - Hogar Patitas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hogar Patitas 🐾</h1>
+            </div>
+
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="que-hacemos.html">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="landing.html" class="btn-donar">Doná ahora</a></li>
+            </ul>
+
+            <button onclick="abrirMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main class="pagina-interior">
+
+        <section class="seccion-clara texto-centro">
+            <h2>Tu donación cambia vidas 🐾</h2>
+            <p>Con tu ayuda podemos rescatar más animales, darles atención veterinaria y encontrarles un hogar.</p>
+        </section>
+
+        <section class="seccion-gris texto-centro">
+
+            <div class="montos">
+                <div class="monto-item" onclick="seleccionarMonto(this, 500)">$500</div>
+                <div class="monto-item" onclick="seleccionarMonto(this, 1000)">$1000</div>
+                <div class="monto-item" onclick="seleccionarMonto(this, 2000)">$2000</div>
+            </div>
+
+            <form class="formulario">
+
+                <label for="monto">Monto a donar</label>
+                <input type="number" id="monto" name="monto" placeholder="O ingresá otro monto">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="correo@email.com">
+
+                <input type="submit" value="Donar ahora">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hogar Patitas. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca-de.html">Acerca de</a></li>
+            <li><a href="que-hacemos.html">¿Qué hacemos?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

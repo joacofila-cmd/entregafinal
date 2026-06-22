@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogar Patitas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hogar Patitas 🐾</h1>
+            </div>
+
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="que-hacemos.html">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="landing.html" class="btn-donar">Doná ahora</a></li>
+            </ul>
+
+            <button onclick="abrirMenu()">☰</button>
+        </nav>
+    </header>
+   <main>
+<section class="hero texto-centro">
+    <picture>
+        <source srcset="img/hero-chico.jpg" media="(max-width: 600px)">
+        <img src="img/hero-grande.jpg" alt="Animales rescatados por Hogar Patitas">
+    </picture>
+    <div class="hero-contenido">
+        <h2>Cada patita merece un hogar</h2>
+       <p>Rescatamos y encontramos familias responsables para animales abandonados en Buenos Aires. Cada historia es única, cada rescate importa y cada adopción cambia dos vidas para siempre. Desde 2018 trabajamos sin descanso junto a voluntarios, veterinarios y familias transitarias para darle a cada animal la segunda oportunidad que merece.</p>
+        <a href="landing.html" class="btn-donar-hero">Doná ahora</a>
+    </div>
+</section>
+
+    <section class="impacto seccion-oscura texto-centro">
+        <div class="impacto-item">
+            <h3>+500</h3>
+            <p>Animales rescatados</p>
+        </div>
+        <div class="impacto-item">
+            <h3>+300</h3>
+            <p>Adopciones concretadas</p>
+        </div>
+        <div class="impacto-item">
+            <h3>+100</h3>
+            <p>Voluntarios activos</p>
+        </div>
+    </section>
+
+    <section class="animales texto-centro">
+        <!-- SOBRE NOSOTROS -->
+<section class="sobre-nosotros texto-centro">
+    <h2>¿Quiénes somos?</h2>
+    <p>Hogar Patitas nació en 2018 con una misión clara: ningún animal debería dormir en la calle. Desde entonces rescatamos, rehabilitamos y encontramos familias amorosas para cientos de perros y gatos en Buenos Aires.</p>
+    <p>Trabajamos gracias al esfuerzo de voluntarios, donantes y familias transitarias que abren sus puertas y sus corazones. Cada rescate es una historia de segunda oportunidad.</p>
+    <a href="acerca-de.html" class="btn-secundario">Conocé más sobre nosotros</a>
+</section>
+        <h2>Animales en adopción</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/animal1.jpg" alt="Perro en adopción">
+                <h3>Tito</h3>
+                <p>2 años · Perro</p>
+                <a href="landing.html">Adoptá</a>
+            </div>
+            <div class="card">
+                <img src="img/animal2.jpg" alt="Gato en adopción">
+                <h3>Luna</h3>
+                <p>1 año · Gata</p>
+                <a href="landing.html">Adoptá</a>
+            </div>
+            <div class="card">
+                <img src="img/animal3.jpg" alt="Perro en adopción">
+                <h3>Coco</h3>
+                <p>3 años · Perro</p>
+                <a href="landing.html">Adoptá</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Hogar Patitas. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca-de.html">Acerca de</a></li>
+            <li><a href="que-hacemos.html">¿Qué hacemos?</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
